@@ -1,0 +1,118 @@
+<!--
+To practice some of our HTML and CSS skills we are going to create a blog webpage. Feel free to alter the theme of your blog, but for the sake of the example we are going to build a dog blog complete with pictures and descriptions of our favorite pups. Typically, when designing a webpage from scratch we scaffold the raw HTML first, then we utilize CSS to make it look nice. Follow the challenges/directions below to complete your web page, but keep in mind you will have to research some code to complete the challenges. Yay for documentation!!!
+
+– Challenge 1 –
+• Remove the current "HTML and CSS Challenges" h1 tag (below). Moving forward, place all code inside the body tags.
+• Let’s create a simple header for our webpage. First, create a header tag. Hmmm a header tag? DON'T CONFUSE A header TAG WITH A head tag or an h1-h6 tag. This is a new tag we havn't talked about yet. It's probably a good idea to look up the documentation on this: https://www.w3schools.com/tags/tag_header.asp. Then let's nest an h1 tag inside of our header tag. The h1 tag should have the text "Dog Blog" inside of it. Additionally, let's add an id of "heading" to our h1 tag so that we can style our h1 later.
+• Let's also add a Horizontal Rule line after our header to give us some separation. Try looking here for some documentation on Horizontal Rule HTML elements: https://www.w3schools.com/tags/tag_hr.asp.
+
+– Challenge 2 –
+Next, let’s start creating our blog posts for our pups.
+• Let’s start by creating a container div for our first blog post and give it class of "blogPost". We will use this class later to style our div. NOTE: If you are unfamiliar with how to add a class on an HTML element try doing a bit of research. www.w3schools.com is a great resource.
+Each blog post we create will consist of an image and a description of a dog.
+• Let’s nest an image tag for our first dog post inside our container div and set the src attribute of it equal to a url of a dog we are blogging about (ex. "https://goo.gl/4zBMtT").
+You can obtain a url of your own by simply googling an image you want, right clicking it and copying the image address.
+• Next let’s create our description for our dog.
+Let’s nest an additional div inside of our container div and give it a class of "textContainer".
+Inside of that textContainer div let's add a paragraph tag. We can add our text that describes our dog. You can come up with this text yourself or you can copy some place holder doggo lorem ipsum here: "https://doggoipsum.com/".
+• Create 4 more of these dog posts to give our page a little more content.
+
+– Challenge 3 –
+As we blog about more and more dogs our page is going to become longer and longer. Let’s add an anchor tag at the bottom of our web page that will return us back to the top without having to scroll all the way up.
+• Create an anchor tag and set its href attribute equal to "#header"
+When you click on the text on our webpage it should take you to the top.
+/*
+– Challenge 4 –
+
+Let’s start off by making our posts look a little more uniform.
+• Create a CSS selector that targets the class "blogPost". Then make its width 75% of their parent element.
+• Create a CSS selector that targets all images and set their widths to 100% of their parent element.
+• Now let’s make our posts pop a bit. Using the same class "blogPost" selector as before, give our blog posts some box shadow.
+• Lets also give our "blogPost" class a border radius of 5px and padding of 5px.
+• Since our posts are a little squished together let’s put 25px of space between them using margin-bottom.
+
+– Challenge 5 –
+Let’s make our content align on the page in a nicer format.
+• Create a CSS selector that targets out body. Then use flexbox to center all of our content on the page in one column.
+
+– Challenge 6 –
+Finally let’s make some last little tweaks to make everything come together.
+• Create a CSS selector that targets our "heading" id and change the font family to "Comic Sans MS".
+• Create a CSS selector for our horizontal rule and set its width to 90% of its parent element and give it 20px of bottom margin.
+• Let’s make our dog descriptions a little easier to read. Create a CSS selector that targets our "textContainer" class and change the line height to 150%.
+• Add 5px of border radius to all images.
+*/
+
+
+/* ADD CODE BELOW THIS LINE: */
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <!--   Meta data would go here   -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1 id="heading">Dog Blog</h1>
+</header>
+<hr/>
+
+<div class="blogpost">
+  <img src="./img/N1fiHxK.jpeg" alt="dog">
+  <div class="textContainer">
+    <p>
+      Doggo ipsum noodle horse smol borking doggo with a long snoot for pats ruff many pats shoob big ol, mlem fluffer snoot. Very taste wow heckin good boys and girls very good spot porgo, very hand that feed shibe many pats. Heckin good boys and girls doggorino length boy, super chub. Blep heckin good boys and girls he made many woofs heck noodle horse puggo, big ol pupper many pats I am bekom fat. Ruff such treat shoober I am bekom fat long water shoob puggo dat tungg tho, borkdrive I am bekom fat very good spot long bois heckin good boys and girls.
+
+      Most angery pupper I have ever seen what a nice floof long woofer doge such treat pats dat tungg tho, woofer doge smol what a nice floof blop, noodle horse boof yapper bork waggy wags. Mlem blop much ruin diet you are doing me the shock, blop. super chub fluffer long bois. Borkdrive noodle horse shooberino boofers heckin borkdrive, doggo blep heck. Pupperino boofers you are doing me the shock stop it fren heckin good boys and girls such treat very hand that feed shibe, sub woofer wow very biscit ruff long doggo. Mlem borking doggo puggorino boofers such treat heck, long doggo tungg blep what a nice floof.  What a nice floof lotsa pats adorable doggo tungg boof, floofs doggorino extremely cuuuuuute. Super chub doge aqua doggo heck, what a nice floof long water shoob. Shibe ruff very jealous pupper corgo pupperino, wow such tempt borkdrive ur givin me a spook, boofers blep fat boi. Smol you are doing me the shock you are doing me a frighten, ruff.
+
+      Long bois h*ck wow such tempt long doggo, floofs. You are doin me a concern puggorino shoober very good spot, pupper. Noodle horse porgo doggo maximum borkdrive wow such tempt puggorino, long doggo very taste wow pupperino maximum borkdrive long doggo very hand that feed shibe, doggorino lotsa pats super chub woofer.  super chub. Wow such tempt ruff ur givin me a spook, stop it fren. You are doing me the shock h*ck I am bekom fat long water shoob maximum borkdrive, extremely cuuuuuute fat boi. Wow very biscit fluffer many pats the neighborhood pupper shibe borking doggo dat tungg tho shooberino, smol pupper shoober long woofer most angery pupper I have ever seen borkdrive. Big ol pupper heckin good boys bork, woofer. doggo blop smol borking doggo with a long snoot for pats. Blop ur givin me a spook waggy wags borkf shoober floofs noodle horse, what a nice floof you are doing me the shock big ol fluffer. Doing me a frighten woofer blop many pats tungg, doing me a frighten shibe.
+    </p>
+  </div>
+</div>
+
+<div class="blogpost">
+  <img src="./img/N1fiHxK.jpeg" alt="dog">
+  <div class="textContainer">
+    <p>
+      Doggo ipsum noodle horse smol borking doggo with a long snoot for pats ruff many pats shoob big ol, mlem fluffer snoot. Very taste wow heckin good boys and girls very good spot porgo, very hand that feed shibe many pats. Heckin good boys and girls doggorino length boy, super chub. Blep heckin good boys and girls he made many woofs heck noodle horse puggo, big ol pupper many pats I am bekom fat. Ruff such treat shoober I am bekom fat long water shoob puggo dat tungg tho, borkdrive I am bekom fat very good spot long bois heckin good boys and girls.
+
+      Most angery pupper I have ever seen what a nice floof long woofer doge such treat pats dat tungg tho, woofer doge smol what a nice floof blop, noodle horse boof yapper bork waggy wags. Mlem blop much ruin diet you are doing me the shock, blop. super chub fluffer long bois. Borkdrive noodle horse shooberino boofers heckin borkdrive, doggo blep heck. Pupperino boofers you are doing me the shock stop it fren heckin good boys and girls such treat very hand that feed shibe, sub woofer wow very biscit ruff long doggo. Mlem borking doggo puggorino boofers such treat heck, long doggo tungg blep what a nice floof.  What a nice floof lotsa pats adorable doggo tungg boof, floofs doggorino extremely cuuuuuute. Super chub doge aqua doggo heck, what a nice floof long water shoob. Shibe ruff very jealous pupper corgo pupperino, wow such tempt borkdrive ur givin me a spook, boofers blep fat boi. Smol you are doing me the shock you are doing me a frighten, ruff.
+
+      Long bois h*ck wow such tempt long doggo, floofs. You are doin me a concern puggorino shoober very good spot, pupper. Noodle horse porgo doggo maximum borkdrive wow such tempt puggorino, long doggo very taste wow pupperino maximum borkdrive long doggo very hand that feed shibe, doggorino lotsa pats super chub woofer.  super chub. Wow such tempt ruff ur givin me a spook, stop it fren. You are doing me the shock h*ck I am bekom fat long water shoob maximum borkdrive, extremely cuuuuuute fat boi. Wow very biscit fluffer many pats the neighborhood pupper shibe borking doggo dat tungg tho shooberino, smol pupper shoober long woofer most angery pupper I have ever seen borkdrive. Big ol pupper heckin good boys bork, woofer. doggo blop smol borking doggo with a long snoot for pats. Blop ur givin me a spook waggy wags borkf shoober floofs noodle horse, what a nice floof you are doing me the shock big ol fluffer. Doing me a frighten woofer blop many pats tungg, doing me a frighten shibe.
+    </p>
+  </div>
+</div>
+
+
+<div class="blogpost">
+  <img src="./img/N1fiHxK.jpeg" alt="dog">
+  <div class="textContainer">
+    <p>
+      Doggo ipsum noodle horse smol borking doggo with a long snoot for pats ruff many pats shoob big ol, mlem fluffer snoot. Very taste wow heckin good boys and girls very good spot porgo, very hand that feed shibe many pats. Heckin good boys and girls doggorino length boy, super chub. Blep heckin good boys and girls he made many woofs heck noodle horse puggo, big ol pupper many pats I am bekom fat. Ruff such treat shoober I am bekom fat long water shoob puggo dat tungg tho, borkdrive I am bekom fat very good spot long bois heckin good boys and girls.
+
+      Most angery pupper I have ever seen what a nice floof long woofer doge such treat pats dat tungg tho, woofer doge smol what a nice floof blop, noodle horse boof yapper bork waggy wags. Mlem blop much ruin diet you are doing me the shock, blop. super chub fluffer long bois. Borkdrive noodle horse shooberino boofers heckin borkdrive, doggo blep heck. Pupperino boofers you are doing me the shock stop it fren heckin good boys and girls such treat very hand that feed shibe, sub woofer wow very biscit ruff long doggo. Mlem borking doggo puggorino boofers such treat heck, long doggo tungg blep what a nice floof.  What a nice floof lotsa pats adorable doggo tungg boof, floofs doggorino extremely cuuuuuute. Super chub doge aqua doggo heck, what a nice floof long water shoob. Shibe ruff very jealous pupper corgo pupperino, wow such tempt borkdrive ur givin me a spook, boofers blep fat boi. Smol you are doing me the shock you are doing me a frighten, ruff.
+
+      Long bois h*ck wow such tempt long doggo, floofs. You are doin me a concern puggorino shoober very good spot, pupper. Noodle horse porgo doggo maximum borkdrive wow such tempt puggorino, long doggo very taste wow pupperino maximum borkdrive long doggo very hand that feed shibe, doggorino lotsa pats super chub woofer.  super chub. Wow such tempt ruff ur givin me a spook, stop it fren. You are doing me the shock h*ck I am bekom fat long water shoob maximum borkdrive, extremely cuuuuuute fat boi. Wow very biscit fluffer many pats the neighborhood pupper shibe borking doggo dat tungg tho shooberino, smol pupper shoober long woofer most angery pupper I have ever seen borkdrive. Big ol pupper heckin good boys bork, woofer. doggo blop smol borking doggo with a long snoot for pats. Blop ur givin me a spook waggy wags borkf shoober floofs noodle horse, what a nice floof you are doing me the shock big ol fluffer. Doing me a frighten woofer blop many pats tungg, doing me a frighten shibe.
+    </p>
+  </div>
+</div>
+
+
+<div class="blogpost">
+  <img src="./img/N1fiHxK.jpeg" alt="dog">
+  <div class="textContainer">
+    <p>
+      Doggo ipsum noodle horse smol borking doggo with a long snoot for pats ruff many pats shoob big ol, mlem fluffer snoot. Very taste wow heckin good boys and girls very good spot porgo, very hand that feed shibe many pats. Heckin good boys and girls doggorino length boy, super chub. Blep heckin good boys and girls he made many woofs heck noodle horse puggo, big ol pupper many pats I am bekom fat. Ruff such treat shoober I am bekom fat long water shoob puggo dat tungg tho, borkdrive I am bekom fat very good spot long bois heckin good boys and girls.
+
+      Most angery pupper I have ever seen what a nice floof long woofer doge such treat pats dat tungg tho, woofer doge smol what a nice floof blop, noodle horse boof yapper bork waggy wags. Mlem blop much ruin diet you are doing me the shock, blop. super chub fluffer long bois. Borkdrive noodle horse shooberino boofers heckin borkdrive, doggo blep heck. Pupperino boofers you are doing me the shock stop it fren heckin good boys and girls such treat very hand that feed shibe, sub woofer wow very biscit ruff long doggo. Mlem borking doggo puggorino boofers such treat heck, long doggo tungg blep what a nice floof.  What a nice floof lotsa pats adorable doggo tungg boof, floofs doggorino extremely cuuuuuute. Super chub doge aqua doggo heck, what a nice floof long water shoob. Shibe ruff very jealous pupper corgo pupperino, wow such tempt borkdrive ur givin me a spook, boofers blep fat boi. Smol you are doing me the shock you are doing me a frighten, ruff.
+
+      Long bois h*ck wow such tempt long doggo, floofs. You are doin me a concern puggorino shoober very good spot, pupper. Noodle horse porgo doggo maximum borkdrive wow such tempt puggorino, long doggo very taste wow pupperino maximum borkdrive long doggo very hand that feed shibe, doggorino lotsa pats super chub woofer.  super chub. Wow such tempt ruff ur givin me a spook, stop it fren. You are doing me the shock h*ck I am bekom fat long water shoob maximum borkdrive, extremely cuuuuuute fat boi. Wow very biscit fluffer many pats the neighborhood pupper shibe borking doggo dat tungg tho shooberino, smol pupper shoober long woofer most angery pupper I have ever seen borkdrive. Big ol pupper heckin good boys bork, woofer. doggo blop smol borking doggo with a long snoot for pats. Blop ur givin me a spook waggy wags borkf shoober floofs noodle horse, what a nice floof you are doing me the shock big ol fluffer. Doing me a frighten woofer blop many pats tungg, doing me a frighten shibe.
+    </p>
+  </div>
+</div>
+
+<a href='#heading'>top</a>
+</body>
+</html>
+
